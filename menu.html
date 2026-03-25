@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
@@ -17,6 +16,9 @@
         <li><a href="menu.html">Menu</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li>
+          <a href="shoppingcart.html"><img src="cart.png" /></a>
+        </li>
       </ul>
     </div>
     <div class="menu">
@@ -25,60 +27,132 @@
         <h2>Starters</h2>
         <div class="menuitem">
           <p>Garlic Bread</p>
-          <span>$5.99</span>
+          <div>
+            <span>$5.99</span>
+            <button class="additem" onclick="addToCart('Garlic Bread', 5.99)">
+              +
+            </button>
+          </div>
         </div>
         <div class="menuitem">
           <p>Tomato Soup</p>
-          <span>$7.99</span>
+          <div>
+            <span>$7.99</span>
+            <button class="additem" onclick="addToCart('Tomato Soup', 7.99)">
+              +
+            </button>
+          </div>
         </div>
         <div class="menuitem">
           <p>Caesar Salad</p>
-          <span>$9.99</span>
+          <div>
+            <span>$9.99</span>
+            <button class="additem" onclick="addToCart('Caesar Salad', 9.99)">
+              +
+            </button>
+          </div>
         </div>
       </div>
       <div class="menucategory">
         <h2>Main Course</h2>
         <div class="menuitem">
           <p>Grilled Salmon</p>
-          <span>$14.99</span>
+          <div>
+            <span>$14.99</span>
+            <button
+              class="additem"
+              onclick="addToCart('Grilled Salmon', 14.99)"
+            >
+              +
+            </button>
+          </div>
         </div>
         <div class="menuitem">
-          <p>Lamb chops</p>
-          <span>$25.99</span>
+          <p>Lamb Chops</p>
+          <div>
+            <span>$25.99</span>
+            <button class="additem" onclick="addToCart('Lamb Chops', 25.99)">
+              +
+            </button>
+          </div>
         </div>
         <div class="menuitem">
           <p>Shrimp Pasta</p>
-          <span>$18.99</span>
+          <div>
+            <span>$18.99</span>
+            <button class="additem" onclick="addToCart('Shrimp Pasta', 18.99)">
+              +
+            </button>
+          </div>
         </div>
       </div>
       <div class="menucategory">
         <h2>Desserts</h2>
         <div class="menuitem">
           <p>Chocolate Lava Cake</p>
-          <span>$8.99</span>
+          <div>
+            <span>$8.99</span>
+            <button
+              class="additem"
+              onclick="addToCart('Chocolate Lava Cake', 8.99)"
+            >
+              +
+            </button>
+          </div>
         </div>
         <div class="menuitem">
           <p>Vanilla Ice Cream</p>
-          <span>$4.99</span>
+          <div>
+            <span>$4.99</span>
+            <button
+              class="additem"
+              onclick="addToCart('Vanilla Ice Cream', 4.99)"
+            >
+              +
+            </button>
+          </div>
         </div>
         <div class="menuitem">
           <p>Cheesecake</p>
-          <span>$6.99</span>
+          <div>
+            <span>$6.99</span>
+            <button class="additem" onclick="addToCart('Cheesecake', 6.99)">
+              +
+            </button>
+          </div>
         </div>
       </div>
       <div class="menucategory">
         <h2>Drinks</h2>
         <div class="menuitem">
           <p>Juice of Choice</p>
-          <span>$2.99</span>
+          <div>
+            <span>$2.99</span>
+            <button
+              class="additem"
+              onclick="addToCart('Juice of Choice', 2.99)"
+            >
+              +
+            </button>
+          </div>
         </div>
         <div class="menuitem">
           <p>Iced Coffee</p>
-          <span>$4.99</span>
+          <div>
+            <span>$4.99</span>
+            <button class="additem" onclick="addToCart('Iced Coffee', 4.99)">
+              +
+            </button>
+          </div>
         </div>
         <div class="menuitem">
           <p>Soda of Choice</p>
-          <span>$2.99</span>
+          <div>
+            <span>$2.99</span>
+            <button class="additem" onclick="addToCart('Soda of Choice', 2.99)">
+              +
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -111,5 +185,6 @@
       </div>
       <p class="copyright">© 2026 FoodLover. All rights reserved.</p>
     </footer>
+    <script src="cart.js"></script>
   </body>
 </html>

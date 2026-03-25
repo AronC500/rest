@@ -23,11 +23,15 @@ Navbar Section
   display: flex;
   flex-direction: row;
   gap: 24px;
+  align-items: center;
 }
 
 .navbaritem a {
   color: white;
   text-decoration: none;
+}
+.navbaritem img {
+  width: 50px;
 }
 
 /*About Section
@@ -150,6 +154,16 @@ footer {
   padding: 60px 0;
 }
 
+.additem {
+  margin-left: 10px;
+  background-color: #ff6b35;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 30px;
+  font-size: 18px;
+  cursor: pointer;
+}
 .menu h1 {
   font-size: 36px;
   margin-bottom: 40px;
@@ -289,4 +303,85 @@ button[type="submit"]:hover {
   margin-top: 48px;
   margin-bottom: 48px;
   font-size: 28px;
+}
+
+/*shopping*/
+.cartpage {
+  padding: 40px;
+}
+
+.cartitem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #d2d0d0;
+}
+
+.cartfooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#carttotal {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.clearbtn {
+  background-color: #ff6b35;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.clearbtn:hover {
+  background-color: #e55a2b;
+}
+
+.quantitycontrols {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantitycontrols button {
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6b35;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.quantitycontrols button:hover {
+  background-color: #e55a2b;
+}
+
+.removebtn {
+  background-color: transparent;
+  color: #ff6b35;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.removebtn:hover {
+  color: #e55a2b;
+  background-color: transparent;
+}
+
+.emptycart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  font-size: 20px;
+  color: black;
 }

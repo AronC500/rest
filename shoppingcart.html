@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
+    <title>Shopping Cart</title>
   </head>
   <body>
     <div class="navbar">
@@ -21,17 +21,19 @@
         </li>
       </ul>
     </div>
-    <div class="about">
-      <h1>About Us</h1>
-      <div>
-        Our goal is SIMPLE. We want to serve delicious food. At Food Lover, we
-        offer an variety of food that many culture can enjoy without also
-        sacrificing the quality. All the dishes is made with fresh ingredient
-        and the day it is served. We believe that satisfying customer is more
-        important than maximizing profit as without the customers, we would not
-        have this amazing community and we would not of been where are at today.
+
+    <div class="cartpage">
+      <h1>
+        Your Cart (<span id="cartcount">0</span>
+        items)
+      </h1>
+      <div id="cartitems"></div>
+      <div class="cartfooter">
+        <div id="carttotal">Total: $0.00</div>
+        <button class="clearbtn" onclick="clearCart()">Clear Cart</button>
       </div>
     </div>
+
     <footer>
       <div class="footercontent">
         <div class="footersection">
@@ -61,5 +63,6 @@
       </div>
       <p class="copyright">© 2026 FoodLover. All rights reserved.</p>
     </footer>
+    <script src="cart.js"></script>
   </body>
 </html>
